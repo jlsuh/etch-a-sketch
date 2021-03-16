@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Etch-A-Sketch</title>
+    <meta charset="UTF-8">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <button id="erase-button">Hover to reset!</button>
+    <div class="toy-container">
+      <div id="final-contour">
+        <div id="outer-thin">
+          <div id="middle-depth">
+            <div id="inner-thin">
+              <div class="toy-utils">
+                <div class="inner-container upper-container">
+                  <img class="etch-a-sketch-logo" src="images/etch-a-sketch-logo.png">
+                </div>
+                <div class="inner-container bottom-container">
+                  <img class="white-button" src="images/left-white-button.png">
+                  <img class="white-button" src="images/right-white-button.png">
+                </div>
+              </div>
+              <div id="container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="settings-container">
+      <div class="pallette-container">
+        <label for="color-pallette">
+          <p>Change color!</p>
+        </label>
+        <input type="color" value="#000000" id="color-pallette">
+      </div>
+      <button class="rainbow off">Rainbow mode</button>
+      <button class="gradient off">Opacity gradient mode</button>
+      <div class="slide-container">
+        <input type="range" min="1" max="100" value="16" class="slider" id="range">
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
